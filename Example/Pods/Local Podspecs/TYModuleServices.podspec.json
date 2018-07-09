@@ -1,0 +1,22 @@
+{
+  "name": "TYModuleServices",
+  "version": "0.1.0",
+  "summary": "A short description of TYModuleServices.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/陈立/TYModuleServices",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "陈立": "chenli857823220@163.com"
+  },
+  "source": {
+    "git": "https://github.com/陈立/TYModuleServices.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TYModuleServices/Classes/**/*"
+}
