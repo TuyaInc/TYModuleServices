@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TYModuleServices'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '涂鸦模板组件'
   s.homepage         = 'https://docs.tuya.com/cn/'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
