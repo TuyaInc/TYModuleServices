@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TYModuleServices'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = '涂鸦模板组件'
   s.homepage         = 'https://docs.tuya.com/cn/'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -13,8 +13,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.frameworks = 'UIKit', 'Foundation'
-  
-  s.vendored_library = 'TYModuleManager/libTYModuleManager.a'
 
 end
 
