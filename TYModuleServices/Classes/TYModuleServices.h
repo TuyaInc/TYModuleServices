@@ -21,5 +21,6 @@
 #import <TYModuleServices/TYMessageCenterProtocol.h>
 #import <TYModuleServices/TYFeedBackProtocol.h>
 #import <TYModuleServices/TYAppleReviewProtocol.h>
+#import <TYModuleServices/TYUserCenterConfigProtocol.h>
 
 #endif /* TYModuleServices_h */

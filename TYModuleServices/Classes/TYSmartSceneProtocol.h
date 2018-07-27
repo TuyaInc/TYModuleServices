@@ -20,4 +20,15 @@
 - (void)gotoSelectAutoForHomeIndexSceneWithSceneIds:(NSArray *)ids;
 
 - (void)resetScenes:(NSArray<TuyaSmartSceneModel *> *)sceneModels;
+
+
+/**
+ DP 选择页面
+
+ @param params 参看 impl 对应的参数赋值
+ @return 
+ */
+- (UIViewController *)selectDPViewController:(NSDictionary *)params;
+
+
 @end
