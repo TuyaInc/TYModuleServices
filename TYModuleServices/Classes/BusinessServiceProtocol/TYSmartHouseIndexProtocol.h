@@ -42,5 +42,7 @@ typedef void(^AddShareDeviceBlock)(NSArray *devIds);
 
 - (void)homeIndexShareWithHomeId:(long long)homeId devIds:(NSArray *)devIds isFullNew:(BOOL)isFullNew addShareDeviceBlock:(AddShareDeviceBlock)addShareDeviceBlock;
 
+- (void)showSpechWithView:(UIView *)view;
+
 - (void)didSelectRowWithModel:(TuyaSmartDeviceModel *)deviceModel groupModel:(TuyaSmartGroupModel *)groupModel;
 @end

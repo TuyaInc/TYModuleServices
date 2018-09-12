@@ -11,4 +11,6 @@
 
 - (void)signOut;
 
+- (void)resetLoginViewController;
+
 @end

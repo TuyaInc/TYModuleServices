@@ -29,6 +29,7 @@
 #define kNotificationAutoTimeCondition @"kNotificationAutoTimeCondition"
 
 #define kCurrentHomeIdKey               @"kCurrentHomeIdKey"
-#define kDefaultHomeRemove             @"kDefaultHomeRemove"
+#define kDefaultHomeRemove              @"kDefaultHomeRemove"
+#define kDefaultHomeManagerRemove       @"kDefaultHomeManagerRemove"
 
 #endif /* TYSmartHouseNotification_h */

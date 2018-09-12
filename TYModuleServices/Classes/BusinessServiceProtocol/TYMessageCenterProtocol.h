@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define kDefaultMessageTimes        @"kDefaultMessageTimes"
+
 @protocol TYMessageCenterProtocol <NSObject>
 
 @end

@@ -11,6 +11,9 @@
 @class TuyaSmartDeviceModel;
 @class TuyaSmartGroupModel;
 
+#define kDefaultRNIP                @"kDefaultRNIP"
+#define kDefaultRNSwitch            @"kDefaultRNSwitch"
+
 @protocol TYPanelProtocol <NSObject>
 NS_ASSUME_NONNULL_BEGIN
 
