@@ -13,8 +13,15 @@
 
 @protocol TYSmartSceneProtocol <NSObject>
 
+//执行场景
 - (void)executeScenen:(TuyaSmartSceneModel *)model;
 
+//重置场景数据源中的场景
 - (void)resetScenes:(NSArray<TuyaSmartSceneModel *> *)sceneModels;
 
+//新增自动化场景
+- (void)addAutoScene:(void(^)(TuyaSmartSceneModel *secneModel, BOOL addSuccess))callback;
+
+//编辑场景
+- (void)editScene:(TuyaSmartSceneModel *)model;
 @end
