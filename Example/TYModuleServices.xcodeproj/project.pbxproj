@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09FA1E9F73CE4D449E0DD5DC /* libPods-TYModuleServices_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B60D0F4FBCAE0F19210C21BA /* libPods-TYModuleServices_Example.a */; };
+		3F99E60D915585F67044CD24 /* libPods-TYModuleServices_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB71FD4674574DDCB2534265 /* libPods-TYModuleServices_Tests.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -20,10 +22,8 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		69A83DB13F86B25E588A6CC0 /* Pods_TYModuleServices_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7DAF6CA7D84EB9AF0B4F1F /* Pods_TYModuleServices_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		8F811D16899B4ACCDCB3A52F /* Pods_TYModuleServices_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D9C00DEC977537AC0ABFA6 /* Pods_TYModuleServices_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +62,8 @@
 		694DBE3BDFB25C8943ED73BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B6D9C00DEC977537AC0ABFA6 /* Pods_TYModuleServices_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYModuleServices_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC7DAF6CA7D84EB9AF0B4F1F /* Pods_TYModuleServices_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TYModuleServices_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60D0F4FBCAE0F19210C21BA /* libPods-TYModuleServices_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYModuleServices_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB71FD4674574DDCB2534265 /* libPods-TYModuleServices_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYModuleServices_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC96832F273DDF010AF80DC5 /* Pods-TYModuleServices_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYModuleServices_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TYModuleServices_Tests/Pods-TYModuleServices_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FB201925985B73607F0E4F19 /* Pods-TYModuleServices_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYModuleServices_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TYModuleServices_Tests/Pods-TYModuleServices_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,7 +76,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				8F811D16899B4ACCDCB3A52F /* Pods_TYModuleServices_Example.framework in Frameworks */,
+				09FA1E9F73CE4D449E0DD5DC /* libPods-TYModuleServices_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +87,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				69A83DB13F86B25E588A6CC0 /* Pods_TYModuleServices_Tests.framework in Frameworks */,
+				3F99E60D915585F67044CD24 /* libPods-TYModuleServices_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,8 +122,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				B6D9C00DEC977537AC0ABFA6 /* Pods_TYModuleServices_Example.framework */,
-				CC7DAF6CA7D84EB9AF0B4F1F /* Pods_TYModuleServices_Tests.framework */,
+				B60D0F4FBCAE0F19210C21BA /* libPods-TYModuleServices_Example.a */,
+				BB71FD4674574DDCB2534265 /* libPods-TYModuleServices_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -205,7 +205,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				F470135EC022141956221AF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -326,28 +325,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F470135EC022141956221AF7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TYModuleServices_Example/Pods-TYModuleServices_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TYModuleServices/TYModuleServices.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TYModuleServices.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TYModuleServices_Example/Pods-TYModuleServices_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

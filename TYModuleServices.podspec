@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TYModuleServices'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = '涂鸦模块服务'
   s.homepage         = 'https://docs.tuya.com/cn/'
   s.author           = { 'TuyaInc' => 'https://www.tuya.com' }
