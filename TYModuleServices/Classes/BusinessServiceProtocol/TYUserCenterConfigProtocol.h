@@ -78,6 +78,12 @@
 - (BOOL)showPrivacyPolicy;
 
 /**
+ 「 关于 」
+ 是否显示服务条款
+ **/
+- (BOOL)showServiceAgreement;
+
+/**
 「 关于 」
  是否显示开源组件许可
  **/

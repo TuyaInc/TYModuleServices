@@ -1,4 +1,4 @@
-use_frameworks!
+source 'https://github.com/TuyaInc/TYPublicSpecs.git'
 
 target 'TYModuleServices_Example' do
   pod 'TYModuleServices', :path => '../'

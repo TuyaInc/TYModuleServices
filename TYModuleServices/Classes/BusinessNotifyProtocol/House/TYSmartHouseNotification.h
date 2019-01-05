@@ -21,13 +21,6 @@
 
 #define kTYTPNotificationHomeHeaderNeedRefresh @"kTYTPNotificationHomeHeaderNeedRefresh"
 
-//添加自动化动作
-#define kNotificationSceneAddAutoAction @"kNotificationSceneAddAutoAction"
-#define kNotificationAutoConditionSave @"kNotificationAutoConditionSave"
-#define kNotificationSceneAddSceneAction @"kNotificationSceneAddSceneAction"
-#define kNotificationAutoOrSceneChanged @"kNotificationAutoOrSceneChanged"
-#define kNotificationAutoTimeCondition @"kNotificationAutoTimeCondition"
-
 #define kCurrentHomeIdKey               @"kCurrentHomeIdKey"
 #define kDefaultHomeRemove              @"kDefaultHomeRemove"
 #define kDefaultHomeManagerRemove       @"kDefaultHomeManagerRemove"

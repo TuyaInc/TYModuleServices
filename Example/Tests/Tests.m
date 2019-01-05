@@ -2,8 +2,8 @@
 //  TYModuleServicesTests.m
 //  TYModuleServicesTests
 //
-//  Created by 陈立 on 07/09/2018.
-//  Copyright (c) 2018 陈立. All rights reserved.
+//  Created by TuyaInc on 07/09/2018.
+//  Copyright (c) 2018 TuyaInc. All rights reserved.
 //
 
 @import XCTest;

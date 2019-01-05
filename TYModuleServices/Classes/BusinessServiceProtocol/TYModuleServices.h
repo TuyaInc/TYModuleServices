@@ -23,5 +23,8 @@
 #import <TYModuleServices/TYAppleReviewProtocol.h>
 #import <TYModuleServices/TYUserCenterConfigProtocol.h>
 #import <TYModuleServices/TYUpgradeProtocol.h>
+#import <TYModuleServices/TYReleaseDebuggerProtocol.h>
+#import <TYModuleServices/TYPrivacyAndServiceModuleProtocol.h>
+#import <TYModuleServices/TYQRCodeProtocol.h>
 
 #endif /* TYModuleServices_h */

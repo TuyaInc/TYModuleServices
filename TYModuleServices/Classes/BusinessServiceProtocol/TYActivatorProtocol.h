@@ -12,10 +12,17 @@
 
 @protocol TYActivatorProtocol <NSObject>
 
-// 配网-选择设备类型
+/**
+ 跳转到 - 配网选择设备类型页面
+ */
 - (void)gotoCategoryViewController;
 
-// 配网-Zigbee配网-选择设备类型
+/**
+ ZigBee网关详情页添加子设备
+ 跳转到 - 添加子设备详情页
+ 
+ @param devId Zigbee网关 设备Id
+ */
 - (void)gotoZigbeeCategoryViewControllerWithGatewayId:(NSString * _Nullable)devId;
 
 @end

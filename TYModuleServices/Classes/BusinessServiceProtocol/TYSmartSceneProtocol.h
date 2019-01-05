@@ -19,6 +19,9 @@
 //重置场景数据源中的场景
 - (void)resetScenes:(NSArray<TuyaSmartSceneModel *> *)sceneModels;
 
+//新增场景
+- (void)addScene:(void(^)(TuyaSmartSceneModel *secneModel, BOOL addSuccess))callback;
+
 //新增自动化场景
 - (void)addAutoScene:(void(^)(TuyaSmartSceneModel *secneModel, BOOL addSuccess))callback;
 
