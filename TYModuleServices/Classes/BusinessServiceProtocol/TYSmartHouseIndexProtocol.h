@@ -21,6 +21,8 @@ typedef enum : NSUInteger {
     HomeSceneDeviceTypeConditionFace              //人脸识别设备
 } HomeSceneDeviceType;
 
+#define kNotificationSmartHouseReloadDashbord   @"kNotificationReloadDashboardTemperature"
+
 typedef void(^AddShareDeviceBlock)(NSArray *devIds);
 
 
@@ -39,7 +41,7 @@ typedef void(^AddShareDeviceBlock)(NSArray *devIds);
  使用语音需要配置goolekey、讯飞sdk及sdk，目前详情可咨询@卢卡
  */
 - (void)showSpeech;
-- (void)showSpechWithView:(UIView *)view __deprecated_msg("Use -showSpeech insted if base on Tuya 3.6.0");
+- (void)showSpechWithView:(UIView *)view __deprecated_msg("Use -showSpeech insted if base on Tuya 3.6.0+");
 
 /**
  判断当前家庭是否是管理员身份

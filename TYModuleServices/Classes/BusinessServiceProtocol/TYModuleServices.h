@@ -26,5 +26,9 @@
 #import <TYModuleServices/TYReleaseDebuggerProtocol.h>
 #import <TYModuleServices/TYPrivacyAndServiceModuleProtocol.h>
 #import <TYModuleServices/TYQRCodeProtocol.h>
+#import <TYModuleServices/TYiWatchProtocol.h>
+#import <TYModuleServices/TYIdentificationProtocol.h>
+#import <TYModuleServices/TYSettingsProtocol.h>
+#import <TYModuleServices/TYRoomProtocol.h>
 
 #endif /* TYModuleServices_h */

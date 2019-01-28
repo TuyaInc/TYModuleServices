@@ -30,9 +30,9 @@
 - (void)gesturePasswordWindowStart;
 
 /**
- 弹出检查版本页面
+ 弹出检查版本页面 - 已弃用
  **/
-- (void)appUpgradeViewCheckVersion;
+- (void)appUpgradeViewCheckVersion __deprecated_msg("Use -[TYSettingsProtocol appUpgradeViewCheckVersion] instead");
     
 
 @end

@@ -20,4 +20,10 @@
  */
 - (void)resetLoginViewController;
 
+/**
+ 跳转绑定/修改手机号页面
+ */
+ 
+- (void)gotoMobileBindingViewController:(void(^)(void))bindingSuccess title:(NSString *)title;
+
 @end
