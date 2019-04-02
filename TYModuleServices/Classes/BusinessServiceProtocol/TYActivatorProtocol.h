@@ -25,5 +25,12 @@
  */
 - (void)gotoZigbeeCategoryViewControllerWithGatewayId:(NSString * _Nullable)devId;
 
+/**
+ 跳转到 - 自定义配网设备选择页面
+ 
+ @param NSString customCategoryName 自定义类名
+ */
+- (void)gotoCustomCategoryViewController:(NSString * _Nullable)customCategoryName;
+
 @end
 #endif /* TYActivatorProtocol_h */

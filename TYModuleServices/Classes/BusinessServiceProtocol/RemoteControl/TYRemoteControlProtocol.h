@@ -223,7 +223,7 @@
  *  @param apikey     key
  *  @param uuidString （非数量限制客户，传nil即可，数量限制客户，传设备的id，该id是自己定义的，一个id代表一个设备）
  */
--(void)checkUserAuthority:(NSString * )apikey uuidString:(NSString *)uuidString __deprecated_msg("该接口已过期，请使用：checkUserAuthority: deviceId:");
+-(void)checkUserAuthority:(NSString * )apikey uuidString:(NSString *)uuidString __deprecated_msg("Use -[checkUserAuthority: deviceId:] instead");
 
 /**
  *  验证权限

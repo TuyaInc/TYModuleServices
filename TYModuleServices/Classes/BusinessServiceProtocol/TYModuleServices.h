@@ -10,8 +10,10 @@
 
 #import <TYModuleServices/TYActivatorProtocol.h>
 #import <TYModuleServices/TYPanelProtocol.h>
+#import <TYModuleServices/TYTimerProtocol.h>
 #import <TYModuleServices/TYSmartHouseIndexProtocol.h>
 #import <TYModuleServices/TYSmartSceneProtocol.h>
+#import <TYModuleServices/TYSmartSceneBizProtocol.h>
 #import <TYModuleServices/TYUserCenterProtocol.h>
 #import <TYModuleServices/TYLoginProtocol.h>
 #import <TYModuleServices/TYCameraProtocol.h>
@@ -21,7 +23,6 @@
 #import <TYModuleServices/TYMessageCenterProtocol.h>
 #import <TYModuleServices/TYFeedBackProtocol.h>
 #import <TYModuleServices/TYAppleReviewProtocol.h>
-#import <TYModuleServices/TYUserCenterConfigProtocol.h>
 #import <TYModuleServices/TYUpgradeProtocol.h>
 #import <TYModuleServices/TYReleaseDebuggerProtocol.h>
 #import <TYModuleServices/TYPrivacyAndServiceModuleProtocol.h>
@@ -30,5 +31,6 @@
 #import <TYModuleServices/TYIdentificationProtocol.h>
 #import <TYModuleServices/TYSettingsProtocol.h>
 #import <TYModuleServices/TYRoomProtocol.h>
+#import <TYModuleServices/TYSmartHomeDataProtocol.h>
 
 #endif /* TYModuleServices_h */

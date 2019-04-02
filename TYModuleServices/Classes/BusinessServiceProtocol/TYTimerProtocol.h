@@ -8,6 +8,9 @@
 #ifndef TYTimerProtocol_h
 #define TYTimerProtocol_h
 
+// 设备预约时间变化
+#define KNotificationLinkageTimeUpdate     @"KNotificationLinkageTimeUpdate"
+
 @protocol TYTimerProtocol <NSObject>
 
 /**

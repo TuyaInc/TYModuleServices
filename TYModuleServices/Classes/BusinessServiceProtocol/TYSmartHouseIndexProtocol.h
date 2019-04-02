@@ -34,7 +34,7 @@ typedef void(^AddShareDeviceBlock)(NSArray *devIds);
 /**
  获取到当前APP选中的家庭
  */
-- (TuyaSmartHome *)currentHome;
+- (TuyaSmartHome *)currentHome DEPRECATED_MSG_ATTRIBUTE("us 'getCurrentHome' in TYSmartHomeDataProtocol instead after Tuya 3.9.0");
 
 /**
  展示语音功能弹窗

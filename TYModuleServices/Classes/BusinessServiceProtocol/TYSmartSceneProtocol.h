@@ -14,7 +14,7 @@
 @protocol TYSmartSceneProtocol <NSObject>
 
 //执行场景
-- (void)executeScenen:(TuyaSmartSceneModel *)model;
+- (void)executeScenen:(TuyaSmartSceneModel *)model __deprecated_msg("Use [TYSmartSceneBizProtocol executeScene:] insted");
 
 //重置场景数据源中的场景
 - (void)resetScenes:(NSArray<TuyaSmartSceneModel *> *)sceneModels;

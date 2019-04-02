@@ -23,7 +23,15 @@
 /**
  跳转绑定/修改手机号页面
  */
- 
 - (void)gotoMobileBindingViewController:(void(^)(void))bindingSuccess title:(NSString *)title;
 
+/**
+ 跳转切区页面
+ */
+- (void)gotoSwitchRegionViewController;
+
+/**
+ 获取当前用户的地区国际化字符串
+ */
+- (void)localizedRegionOfCurrentUser:(void(^)(NSString *region))success failure:(void(^)(NSError *))failure;
 @end
