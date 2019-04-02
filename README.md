@@ -17,12 +17,13 @@ TYModuleServices is available through [CocoaPods](https://cocoapods.org). To ins
 it, simply add the following line to your Podfile:
 
 ```ruby
+source 'https://github.com/TuyaInc/TYPublicSpecs.git'
 pod 'TYModuleServices'
 ```
 
 ## Author
 
-陈立, chenli857823220@163.com
+TuyaInc, https://www.tuya.com
 
 ## License
 
