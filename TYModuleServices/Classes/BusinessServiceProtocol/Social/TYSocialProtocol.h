@@ -56,12 +56,14 @@ typedef void (^TPFailureHandler)(void);
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
-- (void)handleOpenURL:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
-
 - (UIViewController *)shareViewControllerWith:(TYSocialShareModel *)shareModel;
 
 // 是否初始化&&已安装
 - (BOOL)avaliableForType:(TYSocialType)type;
+
+//twitter登录 重定向
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options;
+
 
 @end
 

@@ -27,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 面板根文件夹路径
 - (NSString *)panelRootDir;
 
+// 清除面板缓存
+- (void)cleanPanelCache;
+
 /**
  跳转面板，psuh 的方式
 

@@ -2,12 +2,12 @@
 Pod::Spec.new do |s|
   s.name             = 'TYModuleServices'
 
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
 
   s.summary          = 'Public Services Powered By TuyaInc'
   s.homepage         = 'https://github.com/TuyaInc/TYModuleServices'
   s.author           = { 'TuyaInc' => 'https://www.tuya.com' }
-
+  s.license          = 'None'
   s.source           = { :git => 'https://github.com/TuyaInc/TYModuleServices.git', :tag => s.version.to_s }
   
   s.source_files = 'TYModuleServices/Classes/**/*'

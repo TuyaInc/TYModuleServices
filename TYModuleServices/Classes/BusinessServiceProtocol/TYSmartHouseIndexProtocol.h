@@ -8,19 +8,6 @@
 #import <Foundation/Foundation.h>
 
 
-typedef enum : NSUInteger {
-    HomeSceneTypeNone = 0,
-    HomeSceneTypeScene,
-    HomeSceneTypeAuto
-} HomeSceneType;
-
-typedef enum : NSUInteger {
-    HomeSceneDeviceTypeAction = 0,                //默认设备
-    HomeSceneDeviceTypeActionZigbee,              //ZIGBEE场景
-    HomeSceneDeviceTypeCondition,                 //自动化条件设备
-    HomeSceneDeviceTypeConditionFace              //人脸识别设备
-} HomeSceneDeviceType;
-
 #define kNotificationSmartHouseReloadDashbord   @"kNotificationReloadDashboardTemperature"
 
 typedef void(^AddShareDeviceBlock)(NSArray *devIds);
@@ -40,7 +27,7 @@ typedef void(^AddShareDeviceBlock)(NSArray *devIds);
  展示语音功能弹窗
  使用语音需要配置goolekey、讯飞sdk及sdk，目前详情可咨询@卢卡
  */
-- (void)showSpeech;
+- (void)showSpeech DEPRECATED_MSG_ATTRIBUTE("us 'showSpeechController' in TYSpeechProtocol instead after Tuya 3.9.0");
 - (void)showSpechWithView:(UIView *)view __deprecated_msg("Use -showSpeech insted if base on Tuya 3.6.0+");
 
 /**

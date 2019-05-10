@@ -32,5 +32,12 @@
  */
 - (void)gotoCustomCategoryViewController:(NSString * _Nullable)customCategoryName;
 
+
+/**
+ 设备配网列表页
+ 
+ */
+- (UIViewController *)manualActivatorViewController:(NSString *)parentId;
+
 @end
 #endif /* TYActivatorProtocol_h */

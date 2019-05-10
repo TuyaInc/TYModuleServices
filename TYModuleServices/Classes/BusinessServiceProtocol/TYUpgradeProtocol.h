@@ -30,7 +30,7 @@
  */
 - (void)destoryUpgrade;
 
-#pragma mark - 摄像头固件升级
+// #pragma mark - 摄像头固件升级
 
 /**
  摄像头自动检测固件升级，用于进入摄像头面板的检测
@@ -40,7 +40,7 @@
  @param success 成功回调
  @param failure 失败回调
  */
-- (void)cameraFirmwareCheckAuto:(TuyaSmartCamera *)camera isBlack:(BOOL)isBlack success:(void(^)(void))success failure:(void(^)(NSError *))failure;;
+// - (void)cameraFirmwareCheckAuto:(TuyaSmartCamera *)camera isBlack:(BOOL)isBlack success:(void(^)(void))success failure:(void(^)(NSError *))failure;;
 
 /**
  展示摄像头固件升级VC，用于在设置中展示，进入固件升级VC前会调用固件信息接口
@@ -49,7 +49,7 @@
  @param success 成功回调
  @param failure 失败回调
  */
-- (void)showCameraUpgradeVC:(TuyaSmartCamera *)camera isBlack:(BOOL)isBlack success:(void (^)(void))success failure:(void (^)(NSError *error))failure;
+// - (void)showCameraUpgradeVC:(TuyaSmartCamera *)camera isBlack:(BOOL)isBlack success:(void (^)(void))success failure:(void (^)(NSError *error))failure;
 
 @end
 
