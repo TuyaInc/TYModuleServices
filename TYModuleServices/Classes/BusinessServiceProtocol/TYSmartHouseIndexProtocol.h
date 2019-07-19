@@ -7,14 +7,16 @@
 
 #import <Foundation/Foundation.h>
 
-
 #define kNotificationSmartHouseReloadDashbord   @"kNotificationReloadDashboardTemperature"
 
-typedef void(^AddShareDeviceBlock)(NSArray *devIds);
 
 
 @class TuyaSmartHome;
 @class TuyaSmartDeviceModel, TuyaSmartGroupModel;
+
+typedef void(^AddShareDeviceBlock)(NSArray *devIds);
+typedef void(^SuccessCallback)(NSInteger count);
+typedef void(^FailureCallback)(NSError *error);
 
 @protocol TYSmartHouseIndexProtocol <NSObject>
 
@@ -67,5 +69,16 @@ typedef void(^AddShareDeviceBlock)(NSArray *devIds);
                    groupModel:(TuyaSmartGroupModel *)groupModel;
 
 
+- (void)refreshHousesWithSuccess:(SuccessCallback)successCallback failure:(FailureCallback)failureCallback;
+
+/**
+ 是否只有一个默认创建的家庭
+ */
+- (BOOL)onlyOneHome;
+
+/**
+ 当前的homeId
+ */
+- (long long)homeId;
 
 @end

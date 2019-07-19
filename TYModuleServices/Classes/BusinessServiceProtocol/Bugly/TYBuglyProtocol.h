@@ -2,7 +2,7 @@
 //  TYBuglyProtocol.h
 //  TYBuglyModule
 //
-//  Created by 陈立 on 2018/11/15.
+//  Created by TuyaInc on 2018/11/15.
 //
 
 #ifndef TYBuglyProtocol_h

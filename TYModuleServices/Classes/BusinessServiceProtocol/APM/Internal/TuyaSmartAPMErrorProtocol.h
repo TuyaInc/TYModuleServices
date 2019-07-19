@@ -2,7 +2,7 @@
 //  TuyaSmartErrorAPMProtocol.h
 //  Pods
 //
-//  Created by Rui on 2019/2/16.
+//  Created by TuyaInc on 2019/2/16.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,6 +14,6 @@
  @param type 事件id
  @param attributes 事件内容
  */
-+ (void)errorLogWithType:(NSString *)type attributes:(NSDictionary *)attributes;
+- (void)errorLogWithType:(NSString *)type attributes:(NSDictionary *)attributes;
 
 @end

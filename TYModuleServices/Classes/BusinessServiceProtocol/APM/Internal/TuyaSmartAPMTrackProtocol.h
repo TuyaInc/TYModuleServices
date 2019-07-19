@@ -2,7 +2,7 @@
 //  TuyaSmartAPMTrackProtocol.h
 //  TYAPMLibrary
 //
-//  Created by Rui on 2019/3/27.
+//  Created by TuyaInc on 2019/3/27.
 //
 
 #ifndef TuyaSmartAPMTrackProtocol_h
@@ -19,15 +19,15 @@
  @params identifier 事件ID（调用 [xxx ty_apm_identifier] 生成）
  
  */
-+ (void)beginEvent:(NSString *)name attributes:(NSDictionary *)attributes infos:(NSDictionary *)infos forIdentifier:(NSString *)identifier;
+- (void)beginEvent:(NSString *)name attributes:(NSDictionary *)attributes infos:(NSDictionary *)infos forIdentifier:(NSString *)identifier;
 
 /* 发送一个（时长类）事件
  */
-+ (void)trackEvent:(NSString *)name attributes:(NSDictionary *)attributes infos:(NSDictionary *)infos forIdentifier:(NSString *)identifier;
+- (void)trackEvent:(NSString *)name attributes:(NSDictionary *)attributes infos:(NSDictionary *)infos forIdentifier:(NSString *)identifier;
 
 /* 结束一个（时长类）事件
  */
-+ (void)endEvent:(NSString *)name attributes:(NSDictionary *)attributes infos:(NSDictionary *)infos forIdentifier:(NSString *)identifier;
+- (void)endEvent:(NSString *)name attributes:(NSDictionary *)attributes infos:(NSDictionary *)infos forIdentifier:(NSString *)identifier;
 
 
 @end

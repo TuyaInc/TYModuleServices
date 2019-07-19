@@ -2,7 +2,7 @@
 //  TYVoiceProtocol.h
 //  TYVoiceProtocol
 //
-//  Created by 陈立 on 2018/11/22.
+//  Created by TuyaInc on 2018/11/22.
 //
 
 #ifndef TYVoiceProtocol_h

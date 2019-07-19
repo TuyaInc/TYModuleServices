@@ -2,7 +2,7 @@
 //  TYRemoteControlProtocol.h
 //  TYRemoteControlModule
 //
-//  Created by 陈立 on 2018/11/16.
+//  Created by TuyaInc on 2018/11/16.
 //
 
 #ifndef TYRemoteControlProtocol_h
