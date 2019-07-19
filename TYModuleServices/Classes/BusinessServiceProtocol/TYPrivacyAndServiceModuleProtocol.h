@@ -2,7 +2,7 @@
 //  TYPrivacyAndServiceModuleProtocol.h
 //  Pods
 //
-//  Created by lan on 2018/11/15.
+//  Created by TuyaInc on 2018/11/15.
 //
 
 #import <Foundation/Foundation.h>

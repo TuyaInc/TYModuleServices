@@ -2,7 +2,7 @@
 //  TYModuleServices.h
 //  Pods
 //
-//  Created by 高森 on 2018/4/13.
+//  Created by TuyaInc on 2018/4/13.
 //
 
 #ifndef TYModuleServices_h
@@ -33,5 +33,7 @@
 #import <TYModuleServices/TYSettingsProtocol.h>
 #import <TYModuleServices/TYRoomProtocol.h>
 #import <TYModuleServices/TYSmartHomeDataProtocol.h>
+#import <TYModuleServices/TYSiriShortcutProtocol.h>
+#import <TYModuleServices/TYDomainQueryProtocol.h>
 
 #endif /* TYModuleServices_h */

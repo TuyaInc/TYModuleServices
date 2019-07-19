@@ -2,7 +2,7 @@
 //  TYSocialProtocol.h
 //  TYSocialOverseas
 //
-//  Created by 陈立 on 2018/11/29.
+//  Created by TuyaInc on 2018/11/29.
 //
 
 #ifndef TYSocialProtocol_h

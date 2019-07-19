@@ -23,6 +23,19 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)executeScenen:(TuyaSmartSceneModel *)model;
 
+/**
+ zh^
+ 通过sceneId拿到场景完成数据
+ zh$
+ en^
+ Get scene detail model with sceneId
+ en$
+
+ @param sceneId sceneId
+ @return scene model
+ */
+- (TuyaSmartSceneModel *)getSceneModelWithSceneId:(NSString *)sceneId;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -11,6 +11,7 @@
 #define kTYTPNotificationHomeIdDidChanged @"kTYTPNotificationHomeIdDidChanged"
 
 #define kTYTPNotificationFinishAddHome @"kTYTPNotificationFinishAddHomeDismiss"
+#define kTYTPNotificationUpdateDefaultHome @"kTYTPNotificationUpdateDefaultHome"
 #define kTYTPNotificationFinishRemoveHome @"kTYTPNotificationFinishRemoveHomeDismiss"
 
 #define kTYTPNotificationSmartRemoveHome @"kTYTPNotificationSmartRemoveHome"

@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TYModuleServices'
 
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
 
   s.summary          = 'Public Services Powered By TuyaInc'
   s.homepage         = 'https://github.com/TuyaInc/TYModuleServices'

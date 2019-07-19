@@ -2,7 +2,7 @@
 //  TYCameraProtocol.h
 //  Pods
 //
-//  Created by 高森 on 2018/5/12.
+//  Created by TuyaInc on 2018/5/12.
 //
 
 #ifndef TYCameraProtocol_h

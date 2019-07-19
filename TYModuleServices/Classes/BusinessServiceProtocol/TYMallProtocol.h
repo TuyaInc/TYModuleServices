@@ -2,7 +2,7 @@
 //  TYMallProtocol.h
 //  TYModuleServices
 //
-//  Created by 高森 on 2018/6/7.
+//  Created by TuyaInc on 2018/6/7.
 //
 
 #ifndef TYMallProtocol_h

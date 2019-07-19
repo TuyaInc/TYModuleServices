@@ -16,6 +16,10 @@
  **/
 - (void)appUpgradeViewCheckVersion;
 
+/**
+ * 检查是否用户是否开启声音
+ */
+- (BOOL)soundEnabled;
 
 @end
 
