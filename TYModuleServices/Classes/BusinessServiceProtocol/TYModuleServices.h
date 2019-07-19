@@ -8,6 +8,7 @@
 #ifndef TYModuleServices_h
 #define TYModuleServices_h
 
+#import <TYModuleServices/TYSearchActivatorProtocol.h>
 #import <TYModuleServices/TYActivatorProtocol.h>
 #import <TYModuleServices/TYPanelProtocol.h>
 #import <TYModuleServices/TYTimerProtocol.h>
