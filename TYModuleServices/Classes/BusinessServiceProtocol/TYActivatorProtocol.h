@@ -34,10 +34,50 @@
 
 
 /**
+ IPC 基站添加子设备
+ 跳转到 - 添加子设备详情页
+ 
+ @param gatewayId IPC基站Id
+ */
+- (void)subDevicePrepareViewWithGatewayId:(NSString *)gatewayId subProductId:(NSString *)subProductId;
+
+/**
  设备配网列表页
  
  */
 - (UIViewController *)manualActivatorViewController:(NSString *)parentId;
+
+/**
+ 开启配网弹窗
+ 
+ */
+- (void)startScanVCName:(NSString *)vcName completion: (void(^)(void))completion;
+
+/**
+配网添加设备引导
+ 
+ */
+- (void)showUserGuideInVC:(NSString *)VC completion:(void (^)(void))completion;
+
+/**
+ 跳转到 - 设备配网页面（包含手动和搜索）
+ 
+ */
+- (void)goActivatorRootView;
+/**
+ 跳转到 - 设备配网页面（包含手动和搜索）
+ 
+ @param productId 设备ID
+ @param section 手动搜索的索引项
+ */
+- (void)goActivatorRootView:(NSString *)productId selectSection:(NSInteger)section;
+
+/**
+ 跳转到 - 子设备搜索配网页面
+ 
+ @param gwId 网关ID
+ */
+- (void)gotoSearchSubDeviceVC:(NSString *)gwId;
 
 @end
 #endif /* TYActivatorProtocol_h */

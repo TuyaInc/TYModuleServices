@@ -15,7 +15,7 @@
 @class TYSocialShareModel;
 @class TPSocialLoginModel;
 
-typedef enum {
+typedef NS_ENUM(NSUInteger, TYSocialType) {
     TYSocialWechat,
     TYSocialWechatMoment,   //微信朋友圈
     TYSocialQQ,
@@ -25,20 +25,22 @@ typedef enum {
     TYSocialTwitter,
     TYSocialEmail,
     TYSocialSMS,
+    TYSocialAppleId,
     TYSocialMore,
-} TYSocialType;
+};
 
-typedef enum {
+typedef NS_ENUM(NSUInteger, TYSocialShareContentType) {
     TYSocialShareContentText,       //未使用
     TYSocialShareContenttImage,     //单图分享
     TYSocialShareContentH5,         //web分享
     TYSocialShareContentImageUrl,   //单图URL分享
-} TYSocialShareContentType;
+};
 
-typedef void (^TPSocialSuccess)(TPSocialLoginModel *model);
-typedef void (^TPFailureError)(NSError *error);
-typedef void (^TPSuccessHandler)(void);
-typedef void (^TPFailureHandler)(void);
+typedef void (^TYSocialSuccess)(TPSocialLoginModel *model);
+typedef void (^TYFailureError)(NSError *error);
+typedef void (^TYSuccessHandler)(void);
+typedef void (^TYFailureHandler)(void);
+
 
 @protocol TYSocialProtocol <NSObject>
 
@@ -49,10 +51,10 @@ typedef void (^TPFailureHandler)(void);
 - (void)registerWithType:(TYSocialType)type appKey:(NSString *)appKey appSecret:(NSString *)appSecret;
 
 // 登录
-- (void)loginAction:(TYSocialType)type success:(TPSocialSuccess)success failure:(TPFailureError)failure;
+- (void)loginAction:(TYSocialType)type success:(TYSocialSuccess)success failure:(TYFailureError)failure;
 
 // 分享
-- (void)shareTo:(TYSocialType)type shareModel:(TYSocialShareModel *)shareModel success:(TPSuccessHandler)success failure:(TPFailureHandler)failure;
+- (void)shareTo:(TYSocialType)type shareModel:(TYSocialShareModel *)shareModel success:(TYSuccessHandler)success failure:(TYFailureHandler)failure;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
@@ -62,8 +64,9 @@ typedef void (^TPFailureHandler)(void);
 - (BOOL)avaliableForType:(TYSocialType)type;
 
 //twitter登录 重定向
-- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options;
-
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options;
+// Universal Links
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray<id<UIUserActivityRestoring>> * __nullable restorableObjects))restorationHandler;
 
 @end
 

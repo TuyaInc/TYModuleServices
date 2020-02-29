@@ -7,6 +7,13 @@
 
 #import <Foundation/Foundation.h>
 
+static NSNotificationName const TYUserDidRegisterSuccessNotification = @"TYUserDidRegisterSuccessNotification";
+static NSNotificationName const TYUserDidLoginSuccessNotification = @"TYUserDidLoginSuccessNotification";
+static NSNotificationName const TYUserDidAutoLoginSuccessNotification = @"TYUserDidAutoLoginSuccessNotification";
+static NSNotificationName const TYUserDidForcedLogOutNotification = @"TYUserDidForcedLogOutNotification";
+static NSNotificationName const TYUserDidLogOutNotification = @"TYUserDidLogOutNotification";
+
+
 @protocol TYModuleLoginNotifyProtocol <NSObject>
 
 @optional
@@ -17,26 +24,26 @@
  1. userDidRegisterSuccess
  2. userDidLoginSuccess
  */
-- (void)userDidRegisterSuccess;
+- (void)userDidRegisterSuccess __deprecated_msg("Use [[NSNotificationCenter defaultCenter] addObserver:selector:name:TYUserDidRegisterSuccessNotification object:nil] instead");
 
 /**
  用户手动登录成功
  */
-- (void)userDidLoginSuccess;
+- (void)userDidLoginSuccess __deprecated_msg("Use [[NSNotificationCenter defaultCenter] addObserver:selector:name:TYUserDidLoginSuccessNotification object:nil] instead");
 
 /**
  用户自动登录成功(在已登录的状态下启动App)
  */
-- (void)userDidAutoLoginSuccess;
+- (void)userDidAutoLoginSuccess __deprecated_msg("Use [[NSNotificationCenter defaultCenter] addObserver:selector:name:TYUserDidAutoLoginSuccessNotification object:nil] instead");
 
 /**
  用户退出成功
  */
-- (void)userDidLogOut;
+- (void)userDidLogOut __deprecated_msg("Use [[NSNotificationCenter defaultCenter] addObserver:selector:name:TYUserDidLogOutNotification object:nil] instead");
 
 /**
  用户强制退出成功(被踢下线或者session过期了)
  */
-- (void)userDidForcedLogOut;
+- (void)userDidForcedLogOut __deprecated_msg("Use [[NSNotificationCenter defaultCenter] addObserver:selector:name:TYUserDidForcedLogOutNotification object:nil] instead");
 
 @end

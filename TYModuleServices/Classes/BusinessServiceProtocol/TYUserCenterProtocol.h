@@ -25,14 +25,14 @@
 - (void)gotoUserCenterViewController;
 
 /**
- 弹出手势密码页面
+ 弹出手势密码页面 - 已弃用
  **/
-- (void)gesturePasswordWindowStart;
+- (void)gesturePasswordWindowStart; __deprecated_msg("Use -[TYIdentificationProtocol gesturePasswordWindowStart] instead");
 
 /**
  弹出检查版本页面 - 已弃用
  **/
 - (void)appUpgradeViewCheckVersion __deprecated_msg("Use -[TYSettingsProtocol appUpgradeViewCheckVersion] instead");
-    
+
 
 @end

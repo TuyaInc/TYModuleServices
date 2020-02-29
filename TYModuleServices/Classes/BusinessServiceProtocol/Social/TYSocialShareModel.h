@@ -10,12 +10,17 @@
 
 @interface TYSocialShareModel : NSObject
 
-@property (nonatomic, strong) NSString                  *title;
-@property (nonatomic, strong) NSString                  *content;
-@property (nonatomic, strong) UIImage                   *image;
-@property (nonatomic, strong) NSString                  *imageUrl;
-@property (nonatomic, strong) NSString                  *url;
-@property (nonatomic, strong) NSString                  *desc;
-@property (nonatomic, assign) TYSocialShareContentType  mediaType;
+@property (copy, nonatomic) NSString *title;
+@property (copy, nonatomic) NSString *content;
+@property (strong, nonatomic) UIImage *image;
+@property (copy, nonatomic) NSString *imageUrl;
+@property (copy, nonatomic) NSString *url;
+@property (copy, nonatomic) NSString *desc;
+
+@property (assign, nonatomic) TYSocialShareContentType  mediaType;
+@property (assign, nonatomic) TYSocialType shareType;
+
++ (instancetype)modelWithShareType:(TYSocialType)shareType;
+- (instancetype)initWithShareType:(TYSocialType)shareType;
 
 @end

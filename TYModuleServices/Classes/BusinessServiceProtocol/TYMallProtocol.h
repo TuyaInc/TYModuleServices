@@ -15,6 +15,9 @@
 // 是否显示商城的各种入口
 - (BOOL)enabled;
 
+// 获取商城订单链接
+- (void)getMallOrderWithCompletion:(void(^)(BOOL hasOrder))completion;
+
 @end
 
 #endif /* TYMallProtocol_h */

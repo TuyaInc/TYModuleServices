@@ -10,13 +10,9 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol TYCameraProtocol <NSObject>
+@class TuyaSmartDeviceModel;
 
-/**
- 获取摄像头RN面板
- @param devId 摄像头设备的devId
- */
-- (UIViewController *)cameraRNPanelViewControllerWithDeviceId:(NSString *)devId;
+@protocol TYCameraProtocol <NSObject>
 
 /**
  获取摄像头Native面板
@@ -31,6 +27,20 @@
  @param type 通知透传的消息中携带的 type 数据
  */
 - (void)showCameraCallViewWithDevId:(NSString *)devId type:(NSString *)type;
+
+@optional
+
+- (void)deviceGotoMultiPlayPanel:(TuyaSmartDeviceModel *)deviceModel;
+
+- (void)deviceGotoCameraNewPlayBackPanel:(TuyaSmartDeviceModel *)deviceModel;
+
+- (void)deviceGotoCameraCloudStoragePanel:(TuyaSmartDeviceModel *)deviceModel;
+
+- (void)deviceGotoCameraMessageCenterPanel:(TuyaSmartDeviceModel *)deviceModel;
+
+- (void)deviceGotoPhotoLibrary:(TuyaSmartDeviceModel *)deviceModel;
+
+- (void)deviceGotoAlarmSettingPanel:(TuyaSmartDeviceModel *)deviceModel;
 
 @end
 

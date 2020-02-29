@@ -11,4 +11,12 @@
 
 - (void)gotoNetworkDiagnose:(BOOL)debug;
 
+- (BOOL)needShowLaunchDebugAlert;
+
+- (UIViewController *)debugAlertVC;
+
+- (void)agreeTask:(void(^)(void))task;
+
+- (BOOL)isShowingDebugAlertVC;
+
 @end

@@ -14,6 +14,8 @@
 #define kDefaultRNIP                @"kDefaultRNIP"
 #define kDefaultRNSwitch            @"kDefaultRNSwitch"
 
+static NSString * const kNotificationPanelDidRemoveDevice = @"kNotificationPanelDidRemoveDevice";///<  面板监听调用设备移除接口成功的消息通知
+
 @protocol TYPanelProtocol <NSObject>
 NS_ASSUME_NONNULL_BEGIN
 
@@ -101,7 +103,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param name 事件名
  @param data 数据
  */
-- (void)dispatchEventName:(NSString *)name data:(id _Nonnull)data;
+- (void)dispatchEventName:(NSString *)name data:(id _Nonnull)data __deprecated_msg("Subclass RCTEventEmitter instead");
 
 // RN版本号
 - (NSString *_Nonnull)rnVersionForApp;
