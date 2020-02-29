@@ -25,5 +25,6 @@
 #define kCurrentHomeIdKey               @"kCurrentHomeIdKey"
 #define kDefaultHomeRemove              @"kDefaultHomeRemove"
 #define kDefaultHomeManagerRemove       @"kDefaultHomeManagerRemove"
+#define kDefaultHomeDeviceListRefresh   @"kDefaultHomeDeviceListRefresh"
 
 #endif /* TYSmartHouseNotification_h */

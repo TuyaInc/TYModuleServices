@@ -9,8 +9,13 @@
 
 @protocol TYSplashProtocol <NSObject>
 
-@required
+@property (nonatomic, strong) void(^finishTask)(void);
+
+- (BOOL)isShowing;
+
 - (BOOL)enableSplash;
 - (UIViewController *)splashViewController;
+
+- (void)refreshMarketingSplashSwitch;
 
 @end

@@ -22,6 +22,11 @@ typedef void (^failureBlock)(NSError *error);
 // 调用第三方服务接口
 - (void)getThirdPartyInfoService:(successBlock)success failure:(failureBlock)failure;
 
+- (void)showAlexaBindingGuidance;
+- (void)checkIfNeedShowAlexaGuide;
+
+// 处理拼接 跳转链接的url
+- (NSString *)handleThirdPartyUrl:(NSDictionary *)dic;
 @end
 
 

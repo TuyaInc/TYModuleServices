@@ -9,6 +9,8 @@
 
 #define TYSceneShortcutDidUpdateData @"TYSceneShortcutDidUpdateData" //场景捷径更新通知
 
+@class TuyaSmartSceneModel;
+
 @protocol TYSiriShortcutProtocol <NSObject>
 
 /**

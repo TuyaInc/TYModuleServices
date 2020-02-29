@@ -13,7 +13,7 @@
 // 是否进入审核模式
 - (BOOL)inAppleReviewMode;
 
-// 获取审核模式单设备面板
+// 获取审核模式首页
 - (UIViewController *)singlePanelViewController;
 
 @end
